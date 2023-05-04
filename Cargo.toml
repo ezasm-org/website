@@ -6,5 +6,20 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-leptos = "0.2.5"
-octorust = "0.3.2"
+leptos = { version = "0.2", features = [
+  "serde",
+  "csr",
+] }
+leptos_meta = { version = "0.2", features = ["csr"] }
+leptos_router = { version = "0.2", features = ["csr"]  }
+log = "0.4"
+gloo-net = { version = "0.2", features = ["http"] }
+
+
+# dependecies for client (enable when csr or hydrate set)
+wasm-bindgen = { version = "0.2" }
+console_log = { version = "1"}
+console_error_panic_hook = { version = "0.1"}
+
+[package.metadata.leptos]
+assets-dir = "resources"

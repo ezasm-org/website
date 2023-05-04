@@ -1,3 +1,10 @@
+mod components;
+
+use leptos::*;
+use crate::components::*;
+
 fn main() {
-    println!("Hello, world!");
+    mount_to_body(|cx| {
+        view! { cx, <Navbar /> }
+    });
 }
