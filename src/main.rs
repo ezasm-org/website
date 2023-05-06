@@ -1,10 +1,10 @@
 mod components;
 
-use leptos::*;
 use crate::components::*;
+use leptos::*;
 
 fn main() {
     mount_to_body(|cx| {
-        view! { cx, <Navbar /> }
+        view! { cx, <Navbar /> <Footer/>}
     });
 }
