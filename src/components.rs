@@ -4,7 +4,7 @@ use leptos_meta::*;
 #[component]
 pub fn Navbar(cx: Scope) -> impl IntoView{
     view!{cx,
-        <nav class="bg-white border-gray-200 dark:bg-gray-700 bg-slate-100">
+        <nav class="bg-white border-gray-200 dark:border-b dark:bg-gray-700 bg-slate-100">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" class="flex items-center">
                     <img  src="public/EzASM.svg" class="object-contain dark:invert p-3 h-16" alt="EzASM Logo"/>
